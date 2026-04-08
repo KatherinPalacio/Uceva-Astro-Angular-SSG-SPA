@@ -3,6 +3,7 @@ import { DatePage } from './pages/date/date.page';
 import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
 import { CategoriesPage } from './pages/categories/categories.page';
+import { OrdersPage } from './pages/orders/orders.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -57,6 +58,17 @@ export const routes: Routes = [
    * de mostrar el listado de categorías.
    */
   { path: 'categories', component: CategoriesPage },
+
+  /**
+   * Ruta de pedidos.
+   *
+   * @remarks
+   * Renderiza el componente `OrdersPage`, encargado
+   * de mostrar el listado de pedidos.
+   */
+  { path: 'orders', component: OrdersPage },
+
+    
 
   /**
    * Ruta comodín.
