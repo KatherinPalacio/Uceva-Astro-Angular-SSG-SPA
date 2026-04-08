@@ -62,6 +62,7 @@ export class App {
       { text: 'Fecha', url: '/date' },
       { text: 'Categorías', url: '/categories' },
       { text: 'Pedidos', url: '/orders' },
+      { text: 'Sucursales', url: '/branches' },
     ]
   };
 }

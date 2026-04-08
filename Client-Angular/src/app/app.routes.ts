@@ -4,6 +4,7 @@ import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
 import { CategoriesPage } from './pages/categories/categories.page';
 import { OrdersPage } from './pages/orders/orders.page';
+import { BranchesPage } from './pages/branches/branches.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -68,7 +69,14 @@ export const routes: Routes = [
    */
   { path: 'orders', component: OrdersPage },
 
-    
+   /**
+   * Ruta de sucursales.
+   *
+   * @remarks
+   * Renderiza el componente `BranchesPage`, encargado
+   * de mostrar el listado de sucursales.
+   */
+  { path: 'branches', component: BranchesPage }, 
 
   /**
    * Ruta comodín.
