@@ -1,0 +1,56 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+
+const categories = [
+  {
+    id: 1,
+    name: 'Tecnología',
+    description: 'Productos electrónicos y accesorios',
+    status: 'Activa',
+  },
+  {
+    id: 2,
+    name: 'Hogar',
+    description: 'Artículos para uso doméstico',
+    status: 'Activa',
+  },
+  {
+    id: 3,
+    name: 'Papelería',
+    description: 'Materiales escolares y de oficina',
+    status: 'Activa',
+  },
+  {
+    id: 4,
+    name: 'Deportes',
+    description: 'Implementos y accesorios deportivos',
+    status: 'Inactiva',
+  },
+];
+---
+
+<MainLayout>
+  <h1>Categorías</h1>
+  <hr />
+
+  <table class="table table-striped border">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {categories.map((category) => (
+        <tr>
+          <th scope="row">{category.id}</th>
+          <td>{category.name}</td>
+          <td>{category.description}</td>
+          <td>{category.status}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</MainLayout>
