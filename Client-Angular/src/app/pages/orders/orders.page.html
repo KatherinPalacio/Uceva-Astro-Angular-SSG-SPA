@@ -1,0 +1,21 @@
+<h1>Pedidos</h1>
+<hr>
+
+<table class="table table-striped border">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente</th>
+      <th>Total</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.id }}</td>
+      <td>{{ order.customer }}</td>
+      <td>{{ order.total | currency:'COP' }}</td>
+      <td>{{ order.status }}</td>
+    </tr>
+  </tbody>
+</table>
