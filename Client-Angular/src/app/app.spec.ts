@@ -30,13 +30,34 @@ describe('App', () => {
       title: 'Angular Client',
       iconConfig: {
         icon: 'bootstrap',
-        size: 2
+        size: 2,
       },
       navLinks: [
-        { text: 'Usuarios', url: '/users' },
-        { text: 'Productos', url: '/products' },
-        { text: 'Fecha', url: '/date' },
-      ]
+        {
+          text: 'Usuarios',
+          url: '/users',
+        },
+        {
+          text: 'Productos',
+          url: '/products',
+        },
+        {
+          text: 'Fecha',
+          url: '/date',
+        },
+        {
+          text: 'Categorías',
+          url: '/categories',
+        },
+        {
+          text: 'Pedidos',
+          url: '/orders',
+        },
+        {
+          text: 'Sucursales',
+          url: '/branches',
+        },
+      ],
     });
   });
 
@@ -56,5 +77,4 @@ describe('App', () => {
     const routerOutlet = fixture.debugElement.query(By.css('router-outlet'));
     expect(routerOutlet).toBeTruthy();
   });
-
 });
