@@ -1,13 +1,34 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+/**
+ * Representa un pedido mostrado en la tabla de órdenes.
+ */
 interface OrderItem {
+  /**
+   * Identificador único del pedido.
+   */
   id: number;
+
+  /**
+   * Nombre del cliente que realizó el pedido.
+   */
   customer: string;
+
+  /**
+   * Valor total del pedido.
+   */
   total: number;
+
+  /**
+   * Estado actual del pedido.
+   */
   status: string;
 }
 
+/**
+ * Componente encargado de mostrar la lista de pedidos.
+ */
 @Component({
   selector: 'app-orders',
   standalone: true,
@@ -15,6 +36,9 @@ interface OrderItem {
   templateUrl: './orders.page.html',
 })
 export class OrdersPage {
+  /**
+   * Colección de pedidos mostrados en la vista.
+   */
   orders: OrderItem[] = [
     {
       id: 1,

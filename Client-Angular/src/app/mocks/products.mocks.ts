@@ -1,5 +1,9 @@
 import { Product } from "../interfaces/products.interface";
 
+/**
+ * Datos simulados de productos utilizados para pruebas
+ * y desarrollo en el cliente sin necesidad de consumir una API.
+ */
 export const PRODUCTS_MOCK: Product[] = [
     {
         id: 1,

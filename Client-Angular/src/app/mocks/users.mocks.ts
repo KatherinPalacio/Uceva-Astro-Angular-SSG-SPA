@@ -1,5 +1,9 @@
 import { User } from "../interfaces/users.interface";
 
+/**
+ * Datos simulados de usuarios utilizados para pruebas
+ * y desarrollo en el cliente sin necesidad de consumir una API.
+ */
 export const USERS_MOCK: User[] = [
     {
         id: 1,
